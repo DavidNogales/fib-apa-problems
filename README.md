@@ -99,12 +99,12 @@ Where
 
 <!-- $$
 \begin{align}
-y_1(k) = 2.5*y(k)sin(\pi e^{-u^2(k)-y^2(k)}) \\
+y_1(k) = 2.5 y(k)sin(\pi e^{-u^2(k)-y^2(k)}) \\
 y_2(k) = u(k)(1+u^2(k))
 \end{align}
 $$ -->
 
-<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Balign%7D%0D%0Ay_1(k)%20%3D%202.5*y(k)sin(%5Cpi%20e%5E%7B-u%5E2(k)-y%5E2(k)%7D)%20%5C%5C%0D%0Ay_2(k)%20%3D%20u(k)(1%2Bu%5E2(k))%0D%0A%5Cend%7Balign%7D%0D"></div>
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Balign%7D%0D%0Ay_1(k)%20%3D%202.5%20y(k)sin(%5Cpi%20e%5E%7B-u%5E2(k)-y%5E2(k)%7D)%20%5C%5C%0D%0Ay_2(k)%20%3D%20u(k)(1%2Bu%5E2(k))%0D%0A%5Cend%7Balign%7D%0D"></div>
 
 Where the output <!-- $y(k)$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=y(k)"> depends on the previous input <!-- $u(k-1)$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=u(k-1)"> and output <!-- $y(k-1)$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=y(k-1)">. Train a MLP network to learn the task. Generate a learning set of size <!-- $n=500$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=n%3D500"> having <!-- $y(0)=0$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=y(0)%3D0"> and aleatory exciting the system using a signal <!-- $u(k)$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=u(k)"> uniformly sampled in <!-- $[-2,2]$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5B-2%2C2%5D">. You will need to estimate the best architecture, which can be done with ***cross-validation*** and regularization using your own criteria.
 
