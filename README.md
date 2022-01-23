@@ -87,7 +87,7 @@ See the original statement [here](imgs/a3-be_discrete.png).
 
 ---------------
 
-You are tasked with the identification of a continuous non-linear system **SISO**(single-input/single-output), form a number of points obtained by consecutively sampling the dynamics <!-- $u \rightarrow y$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=u%20%5Crightarrow%20y">. Define:
+You are tasked with the identification of a continuous non-linear system **SISO**(single-input/single-output), from a number of points obtained by consecutively sampling the dynamics <!-- $u \rightarrow y$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=u%20%5Crightarrow%20y">. Define:
 
 <!-- $$
 y(k)= y_1(k-1)+y_2(k-1)
